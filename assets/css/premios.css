@@ -1,0 +1,218 @@
+/* General CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root{
+    --red-color: #DA1A32;
+    --dark-purple-color: #070724;
+    --light-purple-color: #8854C0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --grey-color: #f2f2f2;
+    --transition: all 300ms ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    width: 18vw;
+    height: auto;
+    left: 42vw;
+    top: 0%;
+    z-index: 20;
+}
+
+.nav {
+    width: 70vw;
+    position: absolute;
+    left: 18vw;
+    top: 20%;
+    z-index: 20;
+}
+
+body {
+    background-color: var(--dark-color);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.title {
+    color: var(--grey-color);
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 75px;
+    padding: 30px 0 5px 100px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.25em;
+    color: var(--grey-color);
+    text-decoration: none;
+    padding: 40px
+}
+
+a:hover{
+    font-weight: 600;
+}
+
+.premios {
+    color: var(--red-color);
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gran-premio {
+    display: flex;
+    flex-direction: column;
+}
+
+.gran-premio-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 10vw;
+    top: 33vh;
+    z-index: 20;
+}
+
+.gran-premio-title {
+    position: absolute;
+    width: 500px;
+    left: 17vw;
+    top: 72vh;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.25em;
+    color: var(--grey-color);
+}
+
+.gran-premio-texto {
+    position: absolute;
+    width: 760px;
+    left: 30px;
+    top: 620px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.25em;
+    color: var(--grey-color);
+}
+
+.gran-premio {
+    display: flex;
+    flex-direction: column;
+}
+
+.premios-img {
+    box-sizing: border-box;
+    position: absolute;
+    max-width: 350px;
+    height: auto;
+    left: 62vw;
+    top: 30vh;
+    z-index: 20;
+}
+
+.premios-title {
+    position: absolute;
+    width: 500px;
+    left: 68vw;
+    top: 72vh;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.25em;
+    color: var(--grey-color);
+}
+
+.premios-texto {
+    position: absolute;
+    width: 370px;   
+    left: 62vw;
+    top: 78vh;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.25em;
+    color: var(--grey-color);
+}
+
+footer {
+    height: 100px;
+}
+
+.footer-img {
+    position: absolute;
+    width: 241px;
+    height: 14px;
+    left: 43vw;
+    top: 95vh;
+    z-index: 20;
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .car_img {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: -140px
+    }
+
+    .nav {
+        width: 200px;
+        left: 100px;
+    }
+
+    .footer {
+        left: 80px;
+        top: 860px;
+    }
+}
