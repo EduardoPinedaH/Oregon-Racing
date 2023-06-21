@@ -113,34 +113,9 @@ a:hover{
     z-index: 20;
 }
 
-@media screen and (max-width: 415px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .car_img {
-        display: none;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logo {
-        width: 100%;
-        height: auto;
-        left: 0px;
-        top: -140px
-    }
-
-    .nav {
-        width: 200px;
-        left: 100px;
-    }
-
+@media screen and (max-width: 1400px) {
     .footer {
-        left: 80px;
-        top: 860px;
+        left: 44vw;
+        top: 75vh;
     }
 }
