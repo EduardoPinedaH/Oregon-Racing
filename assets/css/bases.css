@@ -114,6 +114,12 @@ a:hover{
     padding-bottom: 10px;
 }
 
+.clausula {
+    width: 35vw;
+    font-size: 14px;
+    transform: translateX(8vw);
+}
+
 .reglas {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -202,21 +208,16 @@ a:hover{
     padding-bottom: 10px;
 }
 
-.clausula {
-    font-size: 7px;
-    transform: translateX(10vw);
-}
-
 .bases-inscripcion-lista {
     position: absolute;
-    width: 30vw;
+    width: 40vw;
     height: auto;
-    left: 30vw;
+    left: 25vw;
     top: 5vh;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     text-align: left;
     color: var(--grey-color);
