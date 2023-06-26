@@ -15,7 +15,7 @@
 
 .logo {
     position: absolute;
-    width: 18vw;
+    width: 16vw;
     height: auto;
     left: 42vw;
     top: 0%;
@@ -216,7 +216,7 @@ a:hover{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 20px;
     text-align: left;
     color: var(--grey-color);
@@ -243,7 +243,7 @@ a:hover{
     background: var(--grey-color);
     padding: 3px;
     z-index: 20;
-    top: 170vh;
+    top: 175vh;
     left: 40vw;
     cursor: pointer;
 }

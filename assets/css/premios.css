@@ -14,7 +14,7 @@
 
 .logo {
     position: absolute;
-    width: 18vw;
+    width: 16vw;
     height: auto;
     left: 42vw;
     top: 0%;
@@ -92,7 +92,7 @@ a:hover{
 .gran-premio-img {
     box-sizing: border-box;
     position: absolute;
-    width: 500px;
+    width: 32vw;
     height: auto;
     left: 10vw;
     top: 33vh;
@@ -101,7 +101,7 @@ a:hover{
 
 .gran-premio-title {
     position: absolute;
-    width: 500px;
+    width: 50vw;
     left: 17vw;
     top: 72vh;
     font-family: 'Open Sans', sans-serif;
@@ -115,9 +115,9 @@ a:hover{
 
 .gran-premio-texto {
     position: absolute;
-    width: 760px;
-    left: 30px;
-    top: 620px;
+    width: 76vw;
+    left: -12vw;
+    top: 80vh;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 100;
