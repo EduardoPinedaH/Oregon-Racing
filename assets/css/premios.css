@@ -1,6 +1,6 @@
 /* General CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root{
     --red-color: #DA1A32;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -99,30 +99,42 @@ a:hover{
     z-index: 20;
 }
 
+.premios-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 22vw;
+    height: auto;
+    left: 62vw;
+    top: 30vh;
+    z-index: 20;
+}
+
 .gran-premio-title {
+    box-sizing: border-box;
     position: absolute;
     width: 50vw;
+    height: auto;
     left: 17vw;
     top: 72vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 2rem;
     letter-spacing: 0.25em;
     color: var(--grey-color);
 }
 
 .gran-premio-texto {
+    box-sizing: border-box;
     position: absolute;
     width: 76vw;
+    height: auto;
     left: -12vw;
     top: 80vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 1rem;
     text-align: center;
     letter-spacing: 0.25em;
     color: var(--grey-color);
@@ -133,26 +145,15 @@ a:hover{
     flex-direction: column;
 }
 
-.premios-img {
-    box-sizing: border-box;
-    position: absolute;
-    max-width: 350px;
-    height: auto;
-    left: 62vw;
-    top: 30vh;
-    z-index: 20;
-}
-
 .premios-title {
     position: absolute;
     width: 500px;
     left: 68vw;
     top: 72vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 2rem;
     letter-spacing: 0.25em;
     color: var(--grey-color);
 }
@@ -162,14 +163,27 @@ a:hover{
     width: 370px;   
     left: 62vw;
     top: 78vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 0.75rem;
     text-align: center;
     letter-spacing: 0.25em;
     color: var(--grey-color);
+}
+
+#btn-idioma {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: var(--grey-color);
+    font-family: "Open Sans", sans-serif;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    z-index: 20;
+    align-items: center;
 }
 
 footer {

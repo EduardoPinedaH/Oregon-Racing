@@ -1,6 +1,6 @@
 /* General CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root{
     --red-color: #DA1A32;
@@ -46,7 +46,7 @@ body {
 
 .title {
     color: var(--grey-color);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 75px;
     padding: 30px 0 5px 100px;
@@ -55,7 +55,7 @@ body {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -73,6 +73,30 @@ a:hover{
 .inicio {
     color: var(--red-color);
     font-weight: 800;
+}
+
+a.esp {
+    position: absolute;
+    cursor: pointer;
+}
+
+a.por {
+    position: absolute;
+    cursor: pointer;
+}
+
+#btn-idioma {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: var(--grey-color);
+    font-family: "Open Sans", sans-serif;
+    bottom: 0;
+    right: 0;
+    margin: 2%;
+    z-index: 20;
+    align-items: center;
 }
 
 .container {

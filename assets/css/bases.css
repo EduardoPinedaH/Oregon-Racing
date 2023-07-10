@@ -1,6 +1,6 @@
 /* General CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
 
 :root{
@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 
 .title {
     color: var(--grey-color);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 75px;
     padding: 30px 0 5px 100px;
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -104,7 +104,7 @@ a:hover{
 }
 
 .bases-info {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 13px;
@@ -121,7 +121,7 @@ a:hover{
 }
 
 .reglas {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -137,7 +137,7 @@ a:hover{
     height: 10vh;
     left: 37vw;
     top: 45vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -154,7 +154,7 @@ a:hover{
     height: 10vh;
     left: 37vw;
     top: 50vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 13px;
@@ -180,7 +180,7 @@ a:hover{
     height: auto;
     left: 40vw;
     top: -15vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -197,7 +197,7 @@ a:hover{
     height: auto;
     left: 21vw;
     top: -10vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 13px;
@@ -214,7 +214,7 @@ a:hover{
     height: auto;
     left: 25vw;
     top: 5vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 14px;
@@ -227,21 +227,20 @@ a:hover{
 }
 
 .eclipse {
-    position: absolute;
+    position: fixed;
     width: 300vw;
     height: 75vh;
     left: 0vw;
-    top: 120vh;
+    top: 30vh;
     background: linear-gradient(-180deg, #000000 0%, #DA1A32 200%);
     backdrop-filter: blur(25px);
-    z-index: 0;
+    z-index: -10;
 }
 
 .register-box {
     max-width: 25vw;
     padding: 1rem;
     position: relative;
-    background: var(--grey-color);
     padding: 3px;
     z-index: 20;
     top: 175vh;
@@ -249,11 +248,15 @@ a:hover{
     cursor: pointer;
 }
 
+#por-registro {
+    margin-top: -7%;
+}
+
 .register-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 64px;
     letter-spacing: 0.25em;
     background: linear-gradient(-180deg, #000000 0%, #DA1A32 300%);
@@ -264,12 +267,48 @@ a:hover{
     cursor: pointer;
 }
 
+#btn-idioma {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: var(--grey-color);
+    font-family: "Open Sans", sans-serif;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    z-index: 40;
+    align-items: center;
+}
+
+.idioma {
+    position: absolute;
+    z-index: 20;
+}
+
+.esp-show {
+    visibility: visible;
+}
+
+.esp-hide {
+    visibility: hidden;
+}
+
+.por-show {
+    visibility: visible;
+}
+
+.por-hide {
+    visibility: hidden;
+}
+
 .footer {
     position: absolute;
     width: auto;
     left: 45vw;
     top: 190vh;
     z-index: 20;
+    margin-bottom: 2%;
 }
 
 @media screen and (max-width: 415px) {

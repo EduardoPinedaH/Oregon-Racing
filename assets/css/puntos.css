@@ -1,6 +1,6 @@
 /* General CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root{
     --red-color: #DA1A32;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -73,6 +73,21 @@ a:hover{
     font-weight: 600;
 }
 
+#btn-idioma {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: var(--grey-color);
+    font-family: "Open Sans", sans-serif;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    z-index: 20;
+    align-items: center;
+}
+
+
 .puntuacion {
     color: var(--red-color);
     font-weight: 800;
@@ -82,18 +97,9 @@ a:hover{
     max-width: 100%;
     height: auto;
     display: flex;
-    position: relative;
-    transform: translate(0px, 25vh);
-    z-index: 10;
-    padding-bottom: 30px;
-}
-
-.footer-img {
     position: absolute;
-    width: auto;
-    left: 45vw;
-    top: 180vh;
-    z-index: 20;
+    z-index: 10;
+    margin-top: -8;
 }
 
 @media screen and (max-width: 415px) {
