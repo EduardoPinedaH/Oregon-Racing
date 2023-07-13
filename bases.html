@@ -1,134 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/OREGON_RACING_W.png">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/bases.css">
-    <title>Oregon Racing - Bases</title>
-</head>
-<body>
-    <header>
-            <div class="header">
-                <!-- <h1 class="title">Oregon Racing</h1> -->
-                <img class="logo" src="assets/img/OREGON_RACING_W.png">
-                <nav class="nav">
-                    <a class="inicio" href="index.html">Inicio</a>
-                    <a class="bases" href="bases.html">Bases</a>
-                    <a class="puntuacion" href="puntos.html">Puntuación</a>
-                    <a class="tabla-posiciones" href="#">Ranking</a>
-                    <a class="premios" href="premios.html">Premios</a>
-                </nav>
-                <a class="esp" href="bases_por.html">
-                    <button class="esp-idioma" id="btn-idioma">
-                        POR
-                    </button>
-                </a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oregon Racing | Bases Esp</title>
+        <link rel="icon" href="assets/img/OREGON_RACING_W.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body style="background: linear-gradient(-180deg, #000000 0%, #DA1A32 400%);">  
+        <header class="header">
+            <nav class="navbar nabvar-dark" style="z-index: 10;">
+                <div class="container-fluid row">
+                    <a href="#" class="navbar-brand mx-auto d-flex" style="justify-content: center;">
+                        <img src="assets/img/OREGON_RACING_W.png" id="logo">
+                    </a>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1" style="flex-direction: column;">
+                            <li class="nav-item">
+                                <a class="nav-link active btn-home" href="index.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link btn-contact" href="bases.html" style="font-weight:600; font-size:20px; color:var(--red-color); font-family: Open Sans;">Bases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-contact" href="puntuacion.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Puntuación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-contact" href="" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-contact" href="premios.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Premios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <a class="esp" href="bases_por.html">
+                <button class="esp-idioma" id="btn-idioma">
+                    POR
+                </button>
+            </a>
+        </header>   
+        <div class="container-fluid d-flex" id="reglas_kit-inicial">
+            <div class="container-fluid row d-flex" style="justify-content: space-between; margin-left: 8%;">
+                <div class="reglas d-flex row reglas-container" style="color: var(--light-color); font-size: 0.75rem; font-weight: 300;">
+                    <p class="bases-info">   
+                        Oregon Tool llevará a las mejores distribuidores para asistir al Gran Premio de Brasil de Fórmula 1 en 2023.
+                    </p>
+                    <h1 class="reglas" style="color: var(--red-color); font-weight: 500;">
+                        Reglas:
+                    </h1>
+                    <p class="bases-info">
+                        1. La campaña de marketing de Oregon Tool es válida solo para los revendedores (Puntos de Ventas) que trabajan 
+                        en sociedad con un distribuidor oficial de Oregon Tool en su región.
+                    </p>
+                    <p class="bases-info">
+                        2. Los ganadores serán los 10 revendedores que hayan acumulado el mayor número de puntos en el ranking hasta 
+                        las 23:59 (hora de Brasilia) del 1 de octubre de 2023, a través del registro en el sitio web: <ins>http://www.oregonracing.club/</ins>
+                    </p>
+                    <p class="bases-info">
+                        3. El premio será un viaje a São Paulo, Brasil para ver el <strong>Gran Premio de Fórmula 1 de 2023</strong> en Interlagos, con todos los gastos pagados. 
+                        El paquete incluye boletos de avión ida y vuelta, alojamiento en hotel 4 estrellas, boletos de entrenamiento y carrera, traslados entre el 
+                        hotel y el Autódromo, beneficiando a 1 persona por Ganador y 1 persona del distribuidor responsable.
+                    </p> 
+                    <p class="bases-info" style="margin-left: 10%; max-width: 70%;">
+                        a. <strong>Oregon Tool</strong> no se hace responsable del transporte entre la residencia y el aeropuerto
+                            más cercano a la ciudad del ganador del premio
+                    </p> 
+                    <p class="bases-info">
+                        4. <strong>Oregon Tool</strong> se comunicará con los 10 minoristas ganadores para informarles sobre el premio y los arreglos de viaje.
+                    </p>
+                    <p class="bases-info" style="margin-left: 10%; max-width: 70%;">
+                        a. En el caso de países que requieran Visa previa para viajar a Brasil, esta deberá ser responsabilidad del ganador del premio, así como la emisión del 
+                        pasaporte y documentación de viaje necesaria.
+                    </p>
+                    <p class="bases-info">
+                        5. El premio es personal e intransferible, y no puede ser canjeado por otro producto o servicio de <strong>Oregon Tool.</strong>
+                    </p>
+                    <p class="bases-info">
+                        6. Los premiados deberán estar al corriente de sus obligaciones fiscales y tributarias y obligaciones financieras regularizadas con la 
+                        Distribuidora Oregon - Así como la Distribuidora con Oregon Tool.
+                    </p>
+                    <p class="bases-info">
+                        7. <strong>Oregon Tool</strong> se reserva el derecho de cambiar o cancelar la campaña en cualquier momento, con previo aviso a los revendedores participantes.
+                    </p>
+                    <p class="bases-info">
+                        8. La participación en la campaña implica la plena aceptación de este reglamento. Cualquier duda o información adicional debe ser aclarada directamente con el equipo de Oregon Tool.
+                    </p>
+                    <p class="bases-info">     
+                        9. La tabla de puntaje general estará disponible en el sitio <ins style="cursor: pointer;">http://www.oregonracing.club/</ins> y el distribuidor tendrá acceso para cargar 
+                        los materiales de sus concesionarios, así como el propio registrado.
+                    </p>                    
+                </div>
             </div>
-    </header>
-
-    <main class="main">
-        <div class="shirts">
-            <img class="shirts-img" src="assets/img/Kit Inicial.png">
+            <div class="container-fluid row d-flex" style="justify-content: center; align-items: center;">
+                <img src="assets/img/Kit Inicial.png" id="kit-img" class="d-flex" style="width: 30rem; height: auto; align-self: flex-end;">
+                <div class="container-fluid row d-flex" style="color: var(--light-color); text-align: center; justify-content: center; align-self: flex-start;">
+                    <h1 class="kit-title" style="font-weight: 600; align-items: center;">
+                        KIT INICIAL
+                    </h1>
+                    <p class="kit-description" style="font-weight: 200;">
+                        CAMISA + TERMO + GORRA + LLAVERO
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="container-bases">
-            <div class="text-left">
-                <p class="bases-info">   
-                    Oregon Tool llevará a las mejores distribuidores para asistir al Gran Premio de Brasil de Fórmula 1 en 2023.
-                </p>
-                <h1 class="reglas">
-                    Reglas:
+        <div class="container-fluid d-flex" id="inscripcion">
+            <div class="container-fluid row d-flex" style="font-weight: 400; color: var(--light-color); margin-top: 5%; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+                <h1 class="inscripcion" style="justify-content: center; color: var(--red-color); font-weight: 600; font-size: 2rem;">
+                    INSCRIPCIÓN:
                 </h1>
-                <p class="bases-info">
-                    1. La campaña de marketing de <strong>Oregon Tool</strong> es válida únicamente para las tiendas asociadas con 
-                    un distribuidor oficial de <strong>Oregon Tool</strong> en su región.
+                <p class="bases-inscripcion" style="font-size: .75rem; max-width: 56%; font-weight: 200;">
+                    Los revendedores deberán registrarse previamente en la campaña a través del sitio web <ins style="cursor: pointer;">http://www.oregonracing.club/</ins>, entre el 10 de julio de 2023 
+                    y el 31 de julio de 2023, completando completamente el formulario de inscripción. Después de la aprobación, el revendedor/o distribuidor podrá cargar la evidencia 
+                    para SOLICITAR sus puntos en el sitio web, completando el formulario de la tabla de puntuación y enviando la evidencia necesaria, que puede ser Facturas por la compra 
+                    de productos de Oregon al distribuidor, como así como reportes de ventas extraídos del sistema del Distribuidor en su región y/o fotografías que presenten clara y 
+                    claramente las evidencias solicitadas.
                 </p>
-                <p class="bases-info">
-                    2. Los ganadores serán las 10 tiendas que hayan acumulado la mayor cantidad de puntos en el ranking hasta las 
-                    23:59 (hora de Brasil) del día 30 de septiembre de 2023. El período de evaluación y acumulación de puntos debe 
-                    solicitarse entre el <strong>10 de julio y el 30 de septiembre de 2023</strong>, a través de la inscripción en el sitio web: 
-                    OREGON RACING.
-                </p>
-                <p class="bases-info">
-                    3. El premio será un viaje a <strong>Sao Paulo, Brasil</strong> para presenciar el Gran Premio de Fórmula 1 de 2023 en Interlagos, con todos
-                    los gastos pagados. El paquete incluye los boletos de avión de ida y vuelta, alojamiento en un hotel de 4 estrellas, entradas 
-                    para el entrenamiento y la carrera, traslados entre el hotel y el autódromo, y e beneficiará a 1 persona por tienda y 1 persona 
-                    del distribuidor de la región donde haya una tienda ganadora.
-                </p> 
-                <p class="bases-info clausula">
-                    a. <strong>Oregon Tool</strong> no se hace responsable del transporte entre la residencia y el aeropuerto
-                        más cercano a la ciudad del ganador del premio
-                </p> 
-                <p class="bases-info">
-                    4. <strong>Oregon Tool</strong> se pondrá en contacto con las 10 tiendas ganadoras para informarles sobre el premio y los 
-                    procedimientos para el viaje.
-                </p>
-                <p class="bases-info">
-                    5. El premio es personal e intransferible, y no puede ser canjeado por otro producto o servicio de <strong>Oregon Tool.</strong>
-                </p>
-                <p class="bases-info">
-                    6. Las tiendas ganadoras deben tener al día con sus obligaciones fiscales y tributarias, así como con sus 
-                    obligaciones financieras regularizadas con el Distribuidor Oregon, al igual que el Distribuidor con Oregon Tool.
-                </p>
-                <p class="bases-info">
-                    7. <strong>Oregon Tool</strong> se reserva el derecho de modificar o cancelar la campaña en cualquier momento, previo aviso a las 
-                    distribuidoras participantes. 
-                </p>
-                <p class="bases-info">
-                    8. La participación en la campaña implica la aceptación íntegra de este reglamento. Cualquier duda o información adicional 
-                    debe aclararse directamente con el equipo de Oregon Tool.
-                </p>
-                <p class="bases-info">     
-                    9. La tabla de puntuación general estará disponible en el sitio web OREGON RACING y el distribuidor tendrá 
-                    acceso para cargar los materiales de sus tiendas, así como el propio vendedor registrado.
-                </p>
-            </div>
-            <div class="text-right">
-                <h1 class="kit-title">
-                    KIT INICIAL
-                </h1>
-                <p class="kit-description">
-                    CAMISA + TERMO + GORRA + LLAVERO
-                </p>
-            </div>
-        </div>
-        <div class="inscripcion-seccion">
-            <div class="inscripcion-texto">
-                <h1 class="inscripcion">
-                    Inscripción:
-                </h1>
-                <p class="bases-inscripcion">
-                    Las tiendas deben inscribirse previamente en la campaña a través del sitio web OREGON RACING, hasta el día 31 de julio de 2023,
-                    y deben recibir la aprobación del distribuidor de la región, así como de <strong>Oregon Tool</strong>. Después de la aprobación,
-                    la tienda estará lista para cargar en el sitio las pruebas para SOLICITAR sus puntos, mediante el llenado del formulario de la tabla
-                    de puntuación y el envío de las pruebas necesarias, que pueden ser facturas de compra de productos Oregon del distribuidor de su región
-                    y/o fotografías que presenten de forma clara y nítida las pruebas solicitadas.
-                </p>
-                <ol class="bases-inscripcion-lista" type="a">
-                    <li>Las fotografías serán evaluadas por el equipo de Oregon para otorgar los puntos solicitados.</li>
-                    <li>Oregon se reserva el derecho de solicitar más pruebas, así como de realizar la verificación de las
-                        pruebas con el distribuidor de la región.
+                <ol class="bases-inscripcion-lista" type="a" style="font-size: .65rem; list-style-position: inside; max-width: 50%; text-align: center; margin-bottom: 2%; font-weight: 400;">
+                    <li>El equipo de Oregón evaluará las pruebas para otorgar la puntuación solicitada.</li>
+                    <li>Oregon se reserva el derecho de solicitar evidencia adicional, así como de verificar 
+                        la evidencia con el distribuidor regional.
                     </li>
-                    <li>Los puntos se otorgarán e incluirán en la tabla de puntuación una vez por semana.</li>
-                    <li>Los resultados finales se divulgarán en un plazo de hasta 2 días hábiles después del cierre oficial de la campaña</li>
+                    <li>Los puntos se otorgarán y se incluirán en la clasificación una vez por semana durante 
+                        el período de la campaña.</li>
+                    <li>El resultado final se dará a conocer dentro de los 5 días hábiles posteriores a la 
+                        finalización del plazo oficial de la campaña.</li>
+                    <li>La puntuación solicitada puede ser rechazada por Oregon Tool por falta de pruebas.</li>
                 </ol>
             </div>
         </div>
-        <!-- <img class="eclipse" src="assets/img/Elipse 3.png"> -->
-        <div class="register-box" id="por-registro">
-            <div>
-                <a class="register-text" href="https://forms.office.com/r/g9TkrWUiyd">
-                    REGISTRATE
-                </a>
-            </div>
-        </div>
-        <div class="eclipse"></div>
-    </main>
-    <script src="assets/js/script.js"></script>
-</body>
-<footer>
-    <img class="footer" src="assets/img/Oregon® 2023. _Consulta términos y condiciones.png">
-</footer>
+        <a class="register-text register-btn d-flex" style="justify-content: center; align-items: center; margin: auto;" href="https://forms.office.com/r/g9TkrWUiyd" target="_blank">
+            REGISTRATE
+        </a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    <footer class="d-flex" style="z-index: 20; justify-content: center; margin-top: 2%;">
+        <p style="color: var(--light-color); font-size: .50rem;"> Oregon &copy; 2023. *Consulta términos y condiciones</p>
+    </footer>
 </html>

@@ -1,52 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/OREGON_RACING_W.png">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/premios.css">
-    <title>Oregon Racing - Premios Por</title>
-</head> 
-<body>
-    <header>
-            <div class="header">
-                <!-- <h1 class="title">Oregon Racing</h1> -->
-                <img class="logo" src="assets/img/OREGON_RACING_W.png">
-                <nav class="nav">
-                    <a class="inicio" href="index_por.html">Começar</a>
-                    <a class="bases" href="bases_por.html">Bases</a>
-                    <a class="puntuacion" href="puntos_por.html">Pontuação</a>
-                    <a class="tabla-posiciones" href="#">Ranking</a>
-                    <a class="premios" href="premios_por.html">Prêmios</a>
-                </nav>
-                <a class="esp" href="premios.html">
-                    <button class="esp-idioma" id="btn-idioma">
-                        ESP
-                    </button>
-                </a>
-            </div>
-    </header>
-
-    <main class="main">
-        <div class="container">
-            <div class="gran-premio">
-                <img class="gran-premio-img" src="assets/img/Imagen 1.png">
-                <h1 class="gran-premio-title">GRANDE PRÊMIO</h1>
-                <p class="gran-premio-texto">HOTEL + VOO + INGRESSOS + ALIMENTAÇÃO</p>
-            </div>
-            <div class="premios-container">
-                <img class="premios-img" src="assets/img/Premios.png">
-                <h1 class="premios-title">PRÊMIOS</h1>
-                <p class="premios-texto">
-                    Escolha entre as diferentes categorias
-                    e leve para casa o que você mais gosta</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oregon Racing | HomePage Esp</title>
+        <link rel="icon" href="assets/img/OREGON_RACING_W.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body>  
+        <header class="header">
+            <nav class="navbar nabvar-dark">
+                <div class="container-fluid row">
+                    <a href="#" class="navbar-brand mx-auto d-flex" style="justify-content: space-around;">
+                        <img src="assets/img/OREGON_RACING_W.png" id="logo">
+                    </a>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active btn-nav" href="index_por.html" style="font-weight:600; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Início</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link btn-nav" href="bases_por.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="puntuacion_por.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Pontuação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="#" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="premios_por.html" style="font-weight:400; font-size:20px; color:var(--red-color); font-family: Open Sans;">Prêmios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <a class="esp" href="premios.html">
+                <button class="esp-idioma" id="btn-idioma">
+                    ESP
+                </button>
+            </a>
+        </header>   
+        <div class="d-flex container-fluid" id="tabla" style="margin-bottom: 10%;">
+            <div class="container-fluid d-flex">
+                <div class="container-fluid column d-flex" style="color: var(--light-color); justify-content: center; text-align: center;">
+                    <div class="premios column d-flex" style="justify-content:space-evenly; align-items: center;  margin-left: 5%;">
+                        <div class=" d-flex" style="flex-direction: column; margin-right: 10rem;">
+                            <img class="gran-premio" src="assets/img/Imagen 1.png" style="width: 40vw; justify-content: center; margin-bottom: 5%;">
+                            <h1 style="font-size: 2rem; font-weight: 500;">GRANDE PRÊMIO</h1>
+                            <h2 style="font-size: 1rem; font-weight: 200;">HOTEL + VOO + PASSAGEM + ALIMENTAÇÃO</h2>
+                        </div>
+                        
+                        <div class="d-flex" style="flex-direction: column; padding-right: 10rem;">
+                            <img class="premio d-flex" src="assets/img/Premios.png" style="width: 30vw; justify-content: center;">
+                            <h1 style="font-size: 2rem; font-weight: 500;">PRÊMIOS</h1>
+                            <h2 style="font-size: 0.75rem; font-weight: 200;">Escolha entre as diferentes categorias e leve para casa o que mais gosta</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-</body>
-<footer>
-    <img class="footer-img" src="assets/img/Oregon® 2023. _Consulta términos y condiciones.png">
-</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    <footer class="d-flex" style="z-index: 20; justify-content: center;">
+        <p style="color: var(--light-color); font-size: .50rem;"> Oregon &copy; 2023. *Consulta términos y condiciones</p>
+    </footer>
 </html>

@@ -1,42 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/OregonRacing_Logo_Opción 1.png">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <title>Oregon Racing - Inicio Por</title>
-</head>
-<body>
-    <header>
-            <div class="header">
-                <!-- <h1 class="title">Oregon Racing</h1> -->
-                <img class="logo" src="assets/img/OREGON_RACING_W.png">
-                <nav class="nav">
-                    <a class="inicio" href="index_por.html">Começar</a>
-                    <a class="bases" href="bases_por.html">Bases</a>
-                    <a class="puntuacion" href="puntos_por.html">Pontuação</a>
-                    <a class="tabla-posiciones" href="#">Ranking</a>
-                    <a class="premios" href="premios_por.html">Prêmios</a>
-                </nav>
-                <a class="esp" href="index.html">
-                    <button class="esp-idioma" id="btn-idioma">
-                        ESP
-                    </button>
-                </a>
-            </div>
-    </header>
-
-    <main class="main">
-        <div class="container">
-            <!-- <img class="car_img" src="assets/img/Prueba img0001.png"> -->
-            <video autoplay muted loop class="car_img" src="assets/vid/Racing-Car_Oregon.mkv"></video>     
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oregon Racing | HomePage Por</title>
+        <link rel="icon" href="assets/img/OREGON_RACING_W.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body class="overflow-hidden ">  
+        <header class="header">
+            <nav class="navbar nabvar-dark fixed-top">
+                <div class="container-fluid row">
+                    <a href="index.html">
+                        <button class="esp-idioma" id="btn-idioma">
+                            ESP
+                        </button>
+                    </a>
+                    <a class="navbar-brand mx-auto d-flex" style="justify-content: center;">
+                        <img src="assets/img/OREGON_RACING_W.png" id="logo">
+                    </a>
+                    <div class="offcanvas-body d-flex flex-lg-row">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active btn-nav" href="#" style="font-weight:600; font-size:20px; color:var(--red-color); font-family: Open Sans;">Início</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link btn-nav" href="bases_por.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Regulamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="puntuacion.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Pontuação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="#" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="premios.html" style="font-weight:400; font-size:20px; color:var(--grey-color); font-family: Open Sans;">Prêmios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>   
+        <div class="d-flex" id="hero">
+            <video loop muted autoplay poster="">
+                <source src="assets/vid/Racing-Car.mkv" type="video/mp4">
+            </video>
         </div>
-    </main>
-</body>
-<footer>
-    <img class="footer" src="assets/img/Oregon® 2023. _Consulta términos y condiciones.png">
-</footer>
+        <script>
+            window.onload = function() {
+                document.getElementById("hero").play();
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    <footer class="fixed-bottom d-flex" style="z-index: 20; justify-content: center;">
+        <p style="color: var(--light-color); font-size: .50rem;"> Oregon &copy; 2023. *Consulta términos y condiciones</p>
+    </footer>
 </html>

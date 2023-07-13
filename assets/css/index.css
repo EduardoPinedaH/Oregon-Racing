@@ -12,77 +12,45 @@
     --transition: all 300ms ease-in-out;
 }
 
-.logo {
-    position: absolute;
-    width: 16vw;
-    height: auto;
-    left: 42vw;
-    top: 0%;
-    z-index: 20;
-}
-
-.nav {
-    max-width: 70vw;
-    position: absolute;
-    left: 25vw;
-    top: 20%;
-    z-index: 20;
-}
-
 body {
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--dark-color);
-    overflow-y: hidden;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-right: 50px;
-}
-
-.title {
-    color: var(--grey-color);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 75px;
-    padding: 30px 0 5px 100px;
-    cursor: pointer;
-    z-index: 10;
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 29px;
-    letter-spacing: 0.25em;
-    color: var(--grey-color);
-    text-decoration: none;
-    padding: 40px
+    font-family: "Open Sans", sans-serif !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+    letter-spacing: 0.25em !important;
+    text-decoration: none !important;
 }
 
-a:hover{
-    font-weight: 600;
+.navbar-brand img {
+    height: 8rem;
+} 
+
+.navbar-nav {
+    flex-direction: row !important;
 }
 
-.inicio {
-    color: var(--red-color);
-    font-weight: 800;
+.nav-item {
+    padding: 1% 2%;
 }
 
-a.esp {
-    position: absolute;
-    cursor: pointer;
+#hero {
+    position: relative;
 }
 
-a.por {
-    position: absolute;
-    cursor: pointer;
+#hero video {
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    z-index: 10;
+    object-fit: cover;
 }
 
 #btn-idioma {
@@ -92,54 +60,117 @@ a.por {
     border-color: transparent;
     color: var(--grey-color);
     font-family: "Open Sans", sans-serif;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
     margin: 2%;
     z-index: 20;
     align-items: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.car_img {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    transform: translate(0px, -60px);
-    z-index: 10;
-}
-
-.text-one {
-    display: flex;
-    color: var(--light-color);
-    z-index: 20;
-    font-size: 35px;
-    transform: translate(350px, -750px);
-}
-
-.reglas {
-    font-weight: 200;
+.register-btn{
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px !important;
+    font-weight: bold;
+    background: linear-gradient(-180deg, #000000 0%, #DA1A32 200%);
+    width: 300px;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.register-btn:hover, .register-btn:focus, .register-btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.footer {
-    position: absolute;
-    width: 241px;
-    height: 14px;
-    left: 44vw;
-    top: 95vh;
-    z-index: 20;
+li{
+    padding-bottom: 2%;
 }
 
-@media screen and (max-width: 1400px) {
-    .footer {
-        left: 44vw;
-        top: 75vh;
+
+
+@media (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Navbar responsive */
+
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+    a {
+        font-family: "Open Sans", sans-serif !important;
+        font-style: normal !important;
+        font-size: 10px !important;
+        letter-spacing: 0.25em !important;
+        text-decoration: none !important;
+    }
+
+    /* Premios responsive */
+    .premios {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .premios-arriba {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    .premios-arriba img {
+        margin: 0 !important;
+        width: 85vw !important;
+    }
+
+    .premios-abajo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    .premios-abajo img {
+        margin: 0 !important;
+        width: 55vw !important;
+    }
+    
+    /* .premios {
+        display: block !important;
+    }
+    .premio{
+        margin-left: 30%;
+    }
+    .gran-premio {
+        margin-left: 20%;
+    }
+    .premios h1, h2 {
+        margin-left: 30%;
+    } */
+
+    /* Bases responsive */
+
+    #reglas_kit-inicial {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .reglas-container {
+        margin-left: -5%;
+    }
+    .bases-inscripcion, .bases-inscripcion-lista {
+        max-width: 100% !important;
     }
 }
